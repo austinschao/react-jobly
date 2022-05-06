@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 /** Renders NavBar
  *
@@ -9,26 +9,40 @@ import { Link } from "react-router-dom";
 function NavBar({currentUser, logout}) {
 
   const name = currentUser ? currentUser.username : "";
-
+  const style = {fontWeight:"bold", color:"black"}
   const loggedInLinks =
     <div>
       <span>
-          <Link to="/companies">Companies</Link>
-          <Link to="/jobs">Jobs</Link>
-          <Link to="/profile">Profile</Link>
-          <Link to="/" onClick={logout}>{name} Logout</Link>
+          <NavLink style={({ isActive }) =>
+              isActive ? style : undefined
+            } to="/companies">Companies</NavLink>
+          <NavLink style={({ isActive }) =>
+              isActive ? style : undefined
+            }to="/jobs">Jobs</NavLink>
+          <NavLink style={({ isActive }) =>
+              isActive ? style : undefined
+            }to="/profile">Profile</NavLink>
+          <NavLink style={({ isActive }) =>
+              isActive ? style : undefined
+            }to="/" onClick={logout}>{name} Logout</NavLink>
       </span>
     </div>
 
   const loggedOutLinks =
     <span>
-      <Link to="/login">Login</Link>
-      <Link to="/signup">Signup</Link>
+      <NavLink style={({ isActive }) =>
+              isActive ? style : undefined
+            } to="/login">Login</NavLink>
+      <NavLink style={({ isActive }) =>
+              isActive ? style : undefined
+            } to="/signup">Signup</NavLink>
     </span>
 
   return (
     <nav className="navbar navbar-light bg-light">
-      <Link to="/" className="homeLink">Jobly</Link>
+      <NavLink style={({ isActive }) =>
+              isActive ? style : undefined
+            } to="/" className="homeLink">Jobly</NavLink>
       <span className="float-end">
         {currentUser ? loggedInLinks : loggedOutLinks}
       </span>

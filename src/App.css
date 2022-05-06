@@ -2,11 +2,11 @@ body {
   background-image: url("http://react-jobly-1.surge.sh/static/media/background.6549e727.png");
 }
 
-
 a {
   text-decoration: none;
   margin: 0 2rem;
 }
+
 
 .companiesLink {
   margin: 0 2rem;
