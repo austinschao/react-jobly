@@ -16,12 +16,20 @@ function App() {
   /** Hydration: monitors for change to token state */
   useEffect(function getLocalToken() {
     async function getToken() {
-      JoblyApi.token = token;
-      if (token) {
-        setCurrentUser(await JoblyApi.getUser(token));
+      try {
+        if (token) {
+          JoblyApi.token = token;
+          setCurrentUser(await JoblyApi.getUser(token));
+        }
+      } catch (err) {
+        if (err) {
+          console.log(err);
+          localStorage.removeItem(token);
+
+        }
       }
-      setIsLoading(false);
     }
+    setIsLoading(false);
     getToken();
   }, [token]);
 
