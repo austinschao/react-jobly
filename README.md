@@ -2,8 +2,8 @@
 
 
 <!-- ABOUT THE PROJECT -->
-# Friender - Find a friend now!
-![image](/public/Screen%20Shot%202022-06-22%20at%201.08.38%20PM.png)
+# Jobly - Find your dream company!
+![image](/jobly-frontend/public/Screen%20Shot%202022-06-22%20at%202.25.54%20PM.png)
 ## Frontend: JavaScript - React
 ## Backend: JavaScript - Node.js - Express - Postgres
 
@@ -12,8 +12,8 @@
 ### Built With
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [React](https://reactjs.org/docs/getting-started.html)
-* [Node.js] (https://nodejs.org/en/docs/)
-* [Express] (https://expressjs.com/en/5x/api.html)
+* [Node.js](https://nodejs.org/en/docs/)
+* [Express](https://expressjs.com/en/5x/api.html)
 * [Postgres](https://www.postgresql.org/docs/current/app-psql.html)
 
 
@@ -22,7 +22,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Friender is a full stack application that allows users to find a potential friend. Users will have the ability to match with each other and send private messages (work in progress).
+Jobly is a full stack application that allows users to find their dream company and their job openings.
 
 
 ### Installation
@@ -37,39 +37,39 @@ To start the React component of the application:
 
 To start the backend server:
 
-    $ npm run start-api
+    $ node server 3001
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Routes -->
 ## Routes
-- /users/:username
-- /users/:username/friends
-- /users/:username/findfriends
-- /users/:username/chat
+- /login
+- /signup
+- /companies
+- /companies:handle
+- /jobs
+- /profile
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Features -->
 ## Features
-### AWS S3
-- Images saved to Amazon S3 bucket and the URLs generated are saved in the database
 ### useEffect and useContext
 - useEffect to obtain user's login information and useContext to share it across components for authentication
 
+<br>
 
 <!-- ROADMAP -->
 ## Roadmap
 
 Ideas for improving the current setup
+- Allowing users to send job applications
 
-- Creating a chat feature between users using SocketIO (in progress)
-
-
+<br>
 
 # Made by Austin Chao
-*Pair programmed with [Melanie Wong](https://github.com/melawong)*
+*Pair programmed with [Caleb Wood](https://github.com/calebthewood)*
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
