@@ -3,7 +3,7 @@
 
 <!-- ABOUT THE PROJECT -->
 # Jobly - Find your dream company!
-![image](/jobly-frontend/public/Screen%20Shot%202022-06-22%20at%202.25.54%20PM.png)
+![image](/public/Screen%20Shot%202022-06-22%20at%202.25.54%20PM.png)
 ## Frontend: JavaScript - React
 ## Backend: JavaScript - Node.js - Express - Postgres
 
