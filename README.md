@@ -4,6 +4,7 @@
 <!-- ABOUT THE PROJECT -->
 # Jobly - Find your dream company!
 ![image](/public/Screen%20Shot%202022-06-22%20at%202.25.54%20PM.png)
+[DEMO](https://react-jobly-frontend-r25.herokuapp.com/jobs)
 ## Frontend: JavaScript - React
 ## Backend: JavaScript - Node.js - Express - Postgres
 
