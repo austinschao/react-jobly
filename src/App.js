@@ -33,7 +33,6 @@ function App() {
     getToken();
   }, [token]);
 
-
   /**Handles login, sets token state and local storage */
   async function loginUser(formData) {
     const token = await JoblyApi.getToken(formData);
